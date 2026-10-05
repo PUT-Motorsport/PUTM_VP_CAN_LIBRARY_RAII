@@ -23,6 +23,7 @@ const uint16_t IVT_MSG_RESULT_I_CAN_ID = 0x521U; // 1313 decimal
 
 const uint16_t CURRENT_SENSOR_CAN_ID = 0x21;
 const uint16_t STEERING_WHEEL_CAN_ID = 0x20;
+const uint16_t MSRB_DATA_CAN_ID = 0x2D;
 
 
 const uint16_t XSENS_ACCELERATION             = 0x70;

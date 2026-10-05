@@ -25,12 +25,13 @@ struct __attribute__((packed)) FrontboxData {
   bool sense_suspension_fl:1;
   bool sense_suspension_fr:1;
 
-  bool is_braking : 1;
-  bool apps : 1;
-
   uint8_t apps_implausibility;
   int16_t front_left_suspension;
   int16_t front_right_suspension;
+  
+  bool apps : 1;
+  bool is_braking : 1;
+
 
 };
 

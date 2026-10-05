@@ -15,6 +15,7 @@
 #include "can_headers/PM09-CANBUS-PDU.hpp"
 #include "can_headers/PM09-CANBUS-CURRENT_SENSOR.hpp"
 #include "can_headers/PM09-CANBUS-STEERING_WHEEL.hpp"
+#include "can_headers/PM09-CANBUS-MSRB-DATA.hpp"
 #include "can_headers/PM09-CANBUS-IVT.hpp"
 
 
@@ -89,9 +90,8 @@ template <>
 constexpr uint16_t can_id<XsensVelocity> = XSENS_VELOCITY;
 
 
-
-
-
+template <>
+constexpr uint16_t can_id<MSRBData> = MSRB_DATA_CAN_ID;
 
 template <>
 constexpr uint16_t can_id<FrontboxData> = FRONT_DATA_CAN_ID;
